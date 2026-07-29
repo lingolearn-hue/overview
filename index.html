@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>lingolearn-hue — App Overview</title>
+<style>
+  :root {
+    --bg: #0f1115;
+    --card: #171a21;
+    --border: #2a2e38;
+    --text: #e8e9ec;
+    --muted: #9aa0ab;
+    --accent: #4f8cff;
+    --accent2: #ff9f4f;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    padding: 20px 14px 40px;
+  }
+  h1 {
+    font-size: 1.3rem;
+    margin: 0 0 4px;
+    text-align: center;
+  }
+  p.sub {
+    text-align: center;
+    color: var(--muted);
+    font-size: 0.85rem;
+    margin: 0 0 24px;
+  }
+  .list {
+    max-width: 640px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 14px 16px;
+  }
+  .info {
+    flex: 1;
+    min-width: 0;
+  }
+  .name {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0 0 2px;
+  }
+  .desc {
+    font-size: 0.78rem;
+    color: var(--muted);
+    margin: 0;
+    line-height: 1.3;
+  }
+  .links {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    flex-shrink: 0;
+  }
+  .btn {
+    display: inline-block;
+    text-align: center;
+    font-size: 0.72rem;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 7px;
+    white-space: nowrap;
+  }
+  .btn.main {
+    background: var(--accent);
+    color: #fff;
+  }
+  .btn.dev {
+    background: transparent;
+    border: 1px solid var(--accent2);
+    color: var(--accent2);
+  }
+  .btn.newer {
+    box-shadow: 0 0 0 2px #3ddc84;
+  }
+  .linkgroup {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 1px;
+  }
+  .ver {
+    font-size: 0.62rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  .newer-icon {
+    color: #3ddc84;
+    font-size: 0.65rem;
+    margin-left: 3px;
+  }
+  footer {
+    text-align: center;
+    color: var(--muted);
+    font-size: 0.72rem;
+    margin-top: 30px;
+  }
+</style>
+</head>
+<body>
+
+<h1>lingolearn-hue</h1>
+<p class="sub">App overview &amp; repo links</p>
+
+<div class="list">
+
+  <div class="row">
+    <div class="info">
+      <p class="name">Chess App</p>
+      <p class="desc">Single phone chess — play together on one device.</p>
+    </div>
+    <div class="links">
+      <div class="linkgroup">
+        <a class="btn main" href="https://lingolearn-hue.github.io/chess-app/" target="_blank" rel="noopener">Main</a>
+        <p class="ver">2026-07-25</p>
+      </div>
+      <div class="linkgroup">
+        <a class="btn dev" href="https://lingolearn-hue.github.io/chess-app-dev/" target="_blank" rel="noopener">Dev</a>
+        <p class="ver">2026-07-25</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="info">
+      <p class="name">Event Counter</p>
+      <p class="desc">Simple event/tally counter app.</p>
+    </div>
+    <div class="links">
+      <div class="linkgroup">
+        <a class="btn dev" href="https://lingolearn-hue.github.io/event-counter-dev/" target="_blank" rel="noopener">Dev</a>
+        <p class="ver">2026-07-29</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="info">
+      <p class="name">Piano Play</p>
+      <p class="desc">Web-based piano practice — slow down, loop, isolate hands.</p>
+    </div>
+    <div class="links">
+      <div class="linkgroup">
+        <a class="btn main" href="https://lingolearn-hue.github.io/piano-play/" target="_blank" rel="noopener">Main</a>
+        <p class="ver">2026-06-14</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="info">
+      <p class="name">Sat Lab</p>
+      <p class="desc">Satellite powertrain test dept. — LIMS/LOMS mockup + lab building game.</p>
+    </div>
+    <div class="links">
+      <div class="linkgroup">
+        <a class="btn main" href="https://lingolearn-hue.github.io/sat-lab/" target="_blank" rel="noopener">Main</a>
+        <p class="ver">v17 · 2026-06-21</p>
+      </div>
+      <div class="linkgroup">
+        <a class="btn dev newer" href="https://lingolearn-hue.github.io/sat-lab-dev/" target="_blank" rel="noopener">Dev<span class="newer-icon">●</span></a>
+        <p class="ver">2026-06-24</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="info">
+      <p class="name">Song Display</p>
+      <p class="desc">Chord sheet viewer with autoscroll and setlists.</p>
+    </div>
+    <div class="links">
+      <div class="linkgroup">
+        <a class="btn main" href="https://lingolearn-hue.github.io/song-display/" target="_blank" rel="noopener">Main</a>
+        <p class="ver">2026-06-28</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="info">
+      <p class="name">Text Read</p>
+      <p class="desc">Mobile-friendly Bible reader app.</p>
+    </div>
+    <div class="links">
+      <div class="linkgroup">
+        <a class="btn main" href="https://lingolearn-hue.github.io/text-read/" target="_blank" rel="noopener">Main</a>
+        <p class="ver">2026-06-13</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="info">
+      <p class="name">Vocab Detector</p>
+      <p class="desc">Vocabulary detection tool (in development).</p>
+    </div>
+    <div class="links">
+      <div class="linkgroup">
+        <a class="btn dev" href="https://lingolearn-hue.github.io/vocab-detector-dev/" target="_blank" rel="noopener">Dev</a>
+        <p class="ver">2026-07-21</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="info">
+      <p class="name">Vocab Games</p>
+      <p class="desc">Vocabulary learning games.</p>
+    </div>
+    <div class="links">
+      <div class="linkgroup">
+        <a class="btn main" href="https://lingolearn-hue.github.io/vocab-games/" target="_blank" rel="noopener">Main</a>
+        <p class="ver">v0.65.0 · 2026-07-20</p>
+      </div>
+      <div class="linkgroup">
+        <a class="btn dev newer" href="https://lingolearn-hue.github.io/vocab-games-dev/" target="_blank" rel="noopener">Dev<span class="newer-icon">●</span></a>
+        <p class="ver">2026-07-29</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<footer>github.com/lingolearn-hue</footer>
+
+</body>
+</html>
